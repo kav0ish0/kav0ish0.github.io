@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link href="https://unpkg.com/box">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="weather">
+            <header><i>←</i>Погода</header>
+            <section class="weather-input">
+                <p class="weather-input__text"></p>
+                <input class="weather-input__town" type="text" placeholder="Ваш город" spellcheck="false">
+                <div class="weather-input__separator"><span>Или по координатам</span></div>
+                <input class="weather-input__town weather-input__x" type="text" placeholder="Координата X" spellcheck="false">
+                <input class="weather-input__town weather-input__y" type="text" placeholder="Координата Y" spellcheck="false">
+            </section>
+            <section class="weather-part">
+                <div class="weather-part__img">
+                    <img src="/img/clear.svg" alt="clear">
+                </div>
+                <div class="weather-part__temp">
+                    <span id="wether-num" class="weather-part__number">13</span>
+                    <span class="weather-part__deg">C</span>
+                </div>
+                <div id="weather-type" class="weather-part__weather">Clear</div>
+                <div id="geo" class="weather-part__location">Moscow</div>
+                <div class="weather-part__feels-like">
+                    <span class="weather-part__number">Ощущается как: </span>
+                    <span id="feels-like" class="weather-part__number">13</span>
+                    <span class="weather-part__deg">C</span>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="js/scrtipt.js"></script>
+</body>
